@@ -11,6 +11,7 @@ RUN apt-get update && apt-get upgrade -y &&\
     rm -rf /usr/share/doc &&\
     wget https://github.com/spielhuus/sconstool-kicad/archive/refs/heads/main.zip &&\
     unzip main.zip &&\
+    rm main.zip &&\
     mkdir -p /usr/share/scons/site_scons/site_tools &&\
     mv sconstool-kicad-main/kicad /usr/share/scons/site_scons/site_tools &&\
     rm -rf sconstool-kicad-main &&\
