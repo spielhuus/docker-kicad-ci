@@ -7,7 +7,7 @@ RUN apt-get update && apt-get upgrade -y &&\
     python3-distutils xdotool locales kicad xvfb \
     imagemagick librsvg2-bin &&\
     pip3 install --no-compile kibot &&\
-    pip3 install PcbDraw scons &&\
+    pip3 install scons junit_xml &&\
     rm -rf /usr/share/doc &&\
     wget https://github.com/spielhuus/sconstool-kicad/archive/refs/heads/main.zip &&\
     unzip main.zip &&\
